@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "StreetArt",
+			"path": "."
+		},
+		{
+			"name": "Maquette",
+			"path": "Maquette"
+		}
+	],
+	"settings": {}
+}

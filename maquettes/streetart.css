@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    background-color: #ededed;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* style du header et de la barre de navigation */
+
+header {
+    max-width: 1100px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home {
+    background-color: #ededed;
+    border-bottom: 3px solid #037d9d;
+    border-left: 3px solid #037d9d;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: flex;
+}
+
+li{
+    list-style: none;
+    padding : 15px 15px 15px 15px;
+    font-size: 24px;
+}
+
+.banner {
+    background-image: url("../images/banner1.jpg");
+    background-size: cover;
+    height: 500px;
+    margin-top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.containerimg {
+    width: 100%;
+}
+
+/* bannière du site */
+
+.presentation {
+    height: 33%;
+    width: 30%;
+    padding: 10px 25px 25px 25px;
+    color: #db0059;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: "mali", "cursive";
+    
+}
+
+/* style de la section principale */
+
+main {
+    background-color: white;
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+.citation {
+    background-color: #ededed;
+    border-bottom: 3px solid #037d9d;
+    border-left: 3px solid #037d9d;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 80%;  
+    font-family: "Mali", cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.citation:last-child {
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.entete {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding-top: 40px;
+    font-size: 25px;
+}
+
+.entete i {
+    color : #037d9d;
+}
+
+.actu {
+    display: flex;
+    width: 95%;
+   margin: auto;
+   position: relative;
+}
+
+.actu img {
+    max-width: 100%;
+}
+
+.actu h4 {
+    color : #037d9d;
+}
+
+.actu article {
+    background-color: #ededed;
+    width: 90%;
+    margin-right: 20px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+
+article > div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.button {
+    background-color: #1d123d;
+    color : white;
+    padding : 10px 10px 10px 10px;
+
+}
+
+.entete2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding-top: 40px;
+    font-size: 25px;
+}
+
+.entete2 i {
+    color: #db0059;
+    font-size: 24px;
+}
+
+.interviews {
+    display: flex;
+    width: 95%;
+   margin: auto;
+   position: relative;
+   margin-bottom: 25px;
+}
+
+.interviews h4 {
+    color : #db0059
+}
+
+.interviews img {
+
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+.interviews article {
+    background-color: #ededed;
+    width: 90%;
+    margin-right: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+/* style du footer */
+
+footer {
+    display: flex;
+    background-color: #db0059;
+    color: white;
+    justify-content: space-around;
+    height: 300px;
+}
+
+footer > div {
+    height: 80%;
+    width: 45%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    border-bottom: white 2px solid;
+    border-left: 2px white solid;
+    padding : 15px 10px 15px 10px;
+    
+}
+form > input {
+    width: 80%;
+    padding : 5px 5px 5px 5px;
+    margin-bottom : 10px;
+}
+
+.follow {
+
+    width : 25%;
+    padding : 15px 15px 15px 15px;
+    color : #db0059;
+}
+
+h5 {
+    text-align: center;
+    margin: auto;
+    padding-top: 40px;
+    font-size: 20px;
+    margin-top : 15px;
+    margin-bottom : 25px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 50%;
+}
+
+/* responsive */
+
+@media screen and (max-width : 980px){
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .interviews, .actu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+
+    .interviews >article, .actu > article {
+        margin-bottom : 20px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+    }
+
+    .socialTablette {
+        height: 200px;
+    }
+
+   .formtablette {
+       width: 90%;
+   }
+}
+
+@media screen and (max-width : 780px) {
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
